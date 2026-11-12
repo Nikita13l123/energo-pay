@@ -6,7 +6,7 @@ import jakarta.validation.constraints.Size;
 
 public record RegisterRequest(
         @NotBlank(message = "Имя обязательно")
-        @Size(max = 50, message = "Имя должно содержать не более 100 символов")
+        @Size(max = 50, message = "Имя должно содержать не более 50 символов")
         String fio,
 
         @NotBlank(message = "Email обязателен")

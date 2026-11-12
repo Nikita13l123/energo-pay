@@ -21,7 +21,7 @@ public class UserService {
 
     @Transactional
     public User register(RegisterRequest request) {
-        String normalizedEmail = request.email().trim().toLowerCase();
+        String normalizedEmail = request.email().trim().toLowerCase(Locale.ROOT);
 
         if (userRepository.existsByEmailIgnoreCase(normalizedEmail)) {
             throw new EmailAlreadyExistsException(normalizedEmail);
