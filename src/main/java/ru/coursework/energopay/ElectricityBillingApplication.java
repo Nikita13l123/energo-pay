@@ -1,4 +1,4 @@
-package ru.coursework.electricity_billing;
+package ru.coursework.energopay;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

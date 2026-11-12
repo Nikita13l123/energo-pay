@@ -1,4 +1,4 @@
-package ru.coursework.electricity_billing;
+package ru.coursework.energopay;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
