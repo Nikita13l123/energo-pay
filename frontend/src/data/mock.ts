@@ -1,0 +1,7 @@
+import type {Account,AuthResponse,Charge,Notification,Payment,Reading} from '../types';
+export const mockAuth:AuthResponse={accessToken:'demo-only-token',user:{id:'1',fullName:'Иванов Иван Иванович',email:'ivanov@example.com',role:'subscriber',accountNumber:'1234567890'}};
+export const mockAccount:Account={number:'1234567890',address:'г. Москва, ул. Центральная, д. 15, кв. 42',balance:2450,tariff:6.43,meterNumber:'45839271',lastReading:12345,averageConsumption:310};
+export const mockReadings:Reading[]=[{id:'r1',date:'2026-10-20',value:12345,consumption:310,status:'accepted'},{id:'r2',date:'2026-09-20',value:12035,consumption:298,status:'accepted'},{id:'r3',date:'2026-08-20',value:11737,consumption:305,status:'accepted'}];
+export const mockCharges:Charge[]=[{id:'c1',period:'Октябрь 2026',amount:2450,paid:0,status:'unpaid'},{id:'c2',period:'Сентябрь 2026',amount:2380,paid:2380,status:'paid'},{id:'c3',period:'Август 2026',amount:2310,paid:2310,status:'paid'}];
+export const mockPayments:Payment[]=[{id:'p1',date:'2026-09-22',amount:2380,status:'paid',transactionId:'TXN-20260922-001'},{id:'p2',date:'2026-08-20',amount:2310,status:'paid',transactionId:'TXN-20260820-002'}];
+export const mockNotifications:Notification[]=[{id:'n1',title:'Напоминание о передаче показаний',text:'Передавайте показания с 15 по 25 число каждого месяца.',date:'2026-11-01'},{id:'n2',title:'Новое начисление',text:'Сформировано начисление на сумму 2 450 ₽.',date:'2026-11-01'}];
